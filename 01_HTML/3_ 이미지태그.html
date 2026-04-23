@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지를 넣기</title>
+    <style>
+        #election:hover{
+            cursor : pointer;
+            transition : transform 400ms ease-in-out;
+            transform : scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h2>이미지 관련 태그</h2>
+
+    <img id="election" width="150" 
+    src="https://ssl.pstatic.net/melona/libs/1566/1566223/adbdaec3586f90c08458_20260415110447056_1.png">
+    <!--
+        img src="이미지의 경로(필수)"
+            alt="이미지에 대한 설명"
+            width="가로길이"
+            height="세로길이"
+    -->
+
+    <img src="image\cat_02.jpg" 
+         width="200"
+         height="150"
+         alt="고양이">
+    <p>
+        * alt <br>
+        - 사진의 경로가 존재하지 않거나 표현할 수 없을 때 대체 텍스트 <br>
+        - 스크린리더에서 이미지를 읽어주는 설명문구 <br>
+
+        웹접근성 => 사용자의 신체적, 지역, 나이, 지식을 수준을 고려해 <br>
+        가능한 최대한 많은 이용자가 불편함없이 이용할 수 있도록 구현하는 것<br>
+    </p>
+    
+    
+    <hr>
+    <h4>* width와 height 속성</h4>
+
+    <p>
+        요소의 가로, 세로길이 조절하는 속성 <br>
+        고정길이(px), 가변길이(%)로 지정이 가능하다.
+    </p>
+
+    <h4>기본단위 == px</h4>
+    <!--
+        VSCode 자주 쓰는 단축키
+        행 복사 : Alt + Shift + ↑, ↓
+        행 이동 : Alt + ↑, ↓
+        행 삭제 : Ctrl + X(사실 삭제는 아니고 행 잘라내기)
+    -->
+    
+    <img src="image\cat_01.jpg" alt="고양이" height="150" width="200">
+    <img src="image\cat_04.jpg" alt="고양이" height="150" width="200">
+    <img src="image\cat_03.jpg" alt="고양이" height="150" width="200">
+    
+
+    <!--부모요소의 크기가 바뀌더라도 크기변동이 일어나지 않음-->
+
+    <hr />
+
+    <h4>가변길이 단위 == %</h4>
+    <img src="image\cat_01.jpg" alt="고양이" height="150" width="30%">
+    <img src="image\cat_04.jpg" alt="고양이" height="150" width="30%">
+    <img src="image\cat_03.jpg" alt="고양이" height="150" width="30%">
+    
+    <br><br><br>
+
+    <h3>
+        미디어 관련태그
+    </h3>
+    
+    <audio src=""></audio>
+    <video src=""></video>
+    <!--
+        src : 미디파일 및 오디오파일의 경로
+        controls : 플레이어를 보일까 말까
+        autoplay : 자동재생을 할까 말까
+        loop : 반복을 할까 말까
+        post : 썸네일 이미지를 지정
+    -->
+
+
+
+
+    
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
