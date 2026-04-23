@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시작</title>
+</head>
+<body>
+    <!--
+        시맨틱(Semantic) 태그 == 의미가 있는 태그
+    -->
+    
+    영역을 나눌때 사용하는 요소 => div
+    <div>여기는 메뉴</div>
+    <div>여기는 제목</div>
+    <div>여기는 바닥</div>
+
+    <p>
+        사람이 봤을때는 아 ~ 여가는 뭐구나 싶은데 HTML만 놓고따지면 다 똑같은 div
+    </p>
+
+    <pre>
+        div의 요소의 경우 아무런 의미가 없기 때문에
+        HTML5에서 의미있는 태그를 좀 쓰자 하면서 나온 태그들
+        == > 시맨틱 태그
+
+        1. 가독성이 좋음(태그명만 봐도 구조를 파악)
+        2. SEO(검색엔진최적화) 구글봇이 어디가 뭐하는 영역인지 이해함
+        3. 웹접근성 (스크린리더가 읽어줌)
+    </pre>
+
+    <h3>div vs 시맨틱태그 차이 알아보기</h3>
+
+    <h4>1. div로 나눠봐야지 ~~</h4>
+
+    <div>
+        <div>로고들어감</div>
+        <div>
+            <div>홈</div>
+            <div>공지사항</div>
+            <div>로그인</div>
+        </div>
+        <div>메인컨텐츠</div>
+        <div>copyright 어쩌고 ~~</div>
+    </div>
+
+    구글봇 : 허 음 div가 있고 div가 있고 div가 있고 div가있네 ~~~
+
+    <hr>
+
+    <h4>시맨틱태그로 변경 !!!</h4>
+
+    <header>로고자리</header>
+    <nav>
+        <div>홈</div>
+        <div>로그인</div>
+        <div>회원가입</div>
+    </nav>
+    <main>메인영역</main>
+    <footer>coryright 어쩌고 ~~</footer>
+
+    구글봇 : 오호 ~ 이 사이트는 상단에 네비가 있고 중단에 메인이있고 하단에 푸터가있고만 ~~
+
+    <h3>시맨틱 태그 종류 !</h3>
+
+    <h4>* header : 머리, 로고/사이트제목/상단메뉴(로그인,회원가입,검색창)</h4>
+    <header>
+        <h3>KH김취 쇼핑몰 ~</h3>
+        <p>국내산 배추만 사용해요 그래서 쫌 비쌉니다 ~</p>
+    </header>
+
+    <h4>* nav : 네비게이션, 바로가기 메뉴링크들</h4>
+    <nav>
+        <a href="#">전체상품</a> |
+        <a href="#">배추김치</a> |
+        <a href="#">총각김치</a> |
+        <a href="#">깍두기</a> |
+        <a href="#">이벤트</a>
+    </nav>
+
+    <h4>* main : 본문, 페이지의 핵심콘텐츠(한 페이지당 딱 한개만쓰자)</h4>
+    <main>진짜 본문 내용이 들어감</main>
+
+    <h4>* section : 구분되는 섹션(주제별로 나눌때)</h4>
+    <section>
+        <h3>이번 주만 떨이로 팝니다잉 !!</h3>
+        <p>실비김치 2kg 33,000원</p>
+    </section>
+
+    <section>
+        <h3>신상품 !! 오늘 들어왔어요 !!!</h3>
+        <p>KH김치 1kg 7,700원</p>
+        <p>KH깍두기 2kg ..</p>
+    </section>
+    <!--
+        section이랑 div차이가 뭐예요 ?? 
+        똑같은건데요
+        section은 의미상 하나의 덩어리 일 때 사용하고
+        div는 그냥 나누고 싶을 때 쓰세요
+    -->
+
+    <h4>* article : 똑 떼놓고 봐도 말이 되는 것들Ⅰ=> 광고같은거</h4>
+
+    <article>
+        <h3>블랙박스 사세요</h3>
+        <p>4채널임 좋음 근데 비쌈</p>
+    </article>
+
+    <h4>* aside : 본문이랑 관련은 있는데 부수적인 것들(사이드바)</h4>
+    <aside>
+        <h3>실시간 트렌드</h3>
+        <ol>
+            <li>1. 김취</li>
+            <li>2. 이승철</li>
+            <li>3. 깍두기</li>
+        </ol>
+    </aside>
+
+    <h4>* footer: 하단부, 저작권/연락처/회사정보/개인정보처리방침/이용약관</h4>
+
+    <footer>
+        <p>KH김취 ~~ | 대표 : 홍길동 | 010 ~~~ </p>
+        <p>개인정보책임자 : 홍길동</p>
+        <p>Copyright @ 2026KH김취 All rights reserved .</p>
+    </footer>
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
