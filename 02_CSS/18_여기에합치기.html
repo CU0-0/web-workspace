@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실전 실전</title>
+
+    <!--body스타일-->
+    <link rel="stylesheet" href="body.css">
+
+    <!-- Logo영역 스타일 -->
+    <link rel="stylesheet" href="logo.css">
+
+    <!-- Search영역 스타일 -->
+    <link rel="stylesheet" href="searchform.css">
+
+    <!-- UtileMenu영역 스타일 -->
+    <link rel="stylesheet" href="utilmenu.css">
+
+    <!--Nav영역 스타일-->
+    <link rel="stylesheet" href="nav.css">
+
+    <!--Hero-banner영역 스타일-->
+    <link rel="stylesheet" href="hero-banner.css">
+
+    <!-- Footer영역 스타일 -->
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <!--
+        오늘의 실습 겸 숙제
+
+        나만의 웰컴페이지 만들기 !!!!!!! 주제 자유
+
+        HTML + CSS파일을 다 만들고
+
+        스크린샷을 찍어서
+
+        우리반게시판에 올리기 !!!!!
+    -->
+    <!--#wrap>(header>#header_$*3)+nav+(main>#content-$*3)+footer-->
+    <div id="wrap">
+        <header>
+            <div id="header_1">
+                <a href="#" id="logo">501 CLASS<span id="dot">.</span></a>
+            </div>
+            <div id="header_2">
+                <form action="search" method="get" id="search-form">
+                    <div id="search-text">
+                        <input type="text" name="query" placeholder="검색어를 입력">
+                    </div>
+                    <div id="search-btn">
+                        <button type="submit">검색하기</button>
+                    </div>
+                </form>
+            </div>
+            <div id="header_3">
+                <div id="util">
+                    <a href="#">회원가입</a>
+                    <a href="#">로그인</a>
+                    <a href="#">장바구니</a>
+                </div>
+            </div>
+        </header>
+        <nav>
+        <ul id="navbar">
+            <li><a href="#">단과반</a></li>
+            <li><a href="#">자격증 대비반</a></li>
+            <li><a href="#">커뮤니티</a></li>
+            <li><a href="#">문의하기</a></li>
+            <li><a href="#">포트폴리오</a></li>
+        </ul>
+    </nav>
+        <main>
+            <div id="content_1">
+
+            </div>
+            <!--#content_2>#hero+#lect-->
+            <div id="content_2">
+                <div id="hero">
+                    <div id="hero-tag">NEW!! 신상 강의</div>
+                    <div id="hero-title">501강의실의 CSS구조잡기!!</div>
+                    <div id="hero-sub">2026년 4월 한정!!</div>
+                </div>
+                <div id="lect">
+                    <div id="hero-tag2">현재 진행중!!</div>
+                    <div id="hero-title2">프로젝트 기반 AWS 풀스택 웹 개발자 양성!!</div>
+                    <div id="hero-sub2">2026년 3월 시작!!</div>
+                </div>
+            </div>
+            <div id="content_3">
+
+            </div>
+        </main>
+        <footer>
+        <div id="footer_1">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보 처리방침</a>
+            <a href="#">인재 채용 문의</a>
+            <a href="#">훈련비 게시</a>
+            <a href="#">강사 구인</a>
+        </div>
+        <div id="footer_2">
+            <p id="p_1">
+                KH정보교육원 ｜ 대표자 : 이승철 ｜ 책임자 : 이승철 ｜ 개인정보관리책임자 : 이승철
+            </p>
+            <p id="p_2">
+                Copyright © 2026 KH 501 Class All Right Reserved
+            </p>
+        </div>
+    </footer>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
