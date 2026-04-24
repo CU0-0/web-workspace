@@ -1,0 +1,31 @@
+#content_1, ul, li{
+    border : 1px solid red;
+    box-sizing : border-box;
+}
+#navbar2{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    display: blok;
+    
+}
+#navbar2>li{
+    padding: 20px 30px;
+
+    &:hover{
+        border-radius: 15px;
+        background-color: rgb(188, 247, 255);
+    }
+}
+#navbar2>li>a{
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-decoration: none;
+    letter-spacing: 4px;
+
+    &:hover{
+        color: #8d8d8d;
+    }
+}

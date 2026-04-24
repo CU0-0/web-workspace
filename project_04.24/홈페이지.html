@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        div, header, main, footer{
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+        #wrap{
+            width: 1000px;
+            height:1000px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            flex: 1.5;
+            display: flex;
+        }
+        main{
+            flex: 8;
+            display: flex;
+        }
+        footer{
+            flex: 1;
+        }
+        #header_1{
+            flex: 2;
+        }
+        #header_2{
+            flex: 4;
+        }
+        #header_3{
+            flex: 6;
+        }
+        #content_1{
+            flex: 1.5;
+        }
+        #content_2{
+            flex: 6;
+        }
+        #content_2-1{
+            height: 20%;
+        }
+        #content_2-2{
+            height: 80%;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="header1.css">
+    <link rel="stylesheet" href="header2.css">
+    <link rel="stylesheet" href="header3.css">
+    <link rel="stylesheet" href="content1.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="header_1">
+                <a href="#" id="logo">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20250921_298%2F17583857259532c1TK_JPEG%2F32947660096308738_84723628.jpg&type=sc960_832">
+                </a>
+            </div>
+            <div id="header_2">
+                <form action="search" method="get" id="search-form">
+                    <div id="search-text">
+                        <input type="text" name="query" placeholder="검색어 입력">
+                    </div>
+                    <div id="search-btn">
+                        <button type="submit">검색</button>
+                    </div>
+                </form>
+            </div>
+            <div id="header_3">
+                <ul id="navbar1">
+                    <li>
+                        <a href="#">정보</a>
+                        <ul>
+                            <li><a href="#">유저 정보</a></li>
+                            <li><a href="#">게임 정보</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li>
+                        <a href="#">게시판</a>
+                        <ul>
+                            <li><a href="#">사진 게시판</a></li>
+                            <li><a href="#">동영상 게시판</a></li>
+                            <li><a href="#">동영상 게시판</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                    </li>
+                    <li>
+                        <a href="#">문의하기</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div id="content_1">
+        <ul id="navbar2">
+            <li><a href="#">게임 할인 정보</a></li>
+            <li><a href="#">카테고리</a></li>
+            <li><a href="#">게임 뉴스</a></li>
+            <li><a href="#">추천 게임</a></li>
+            <li><a href="#">찜 목록</a></li>
+        </ul>
+    </div>
+            <div id="content_2">
+                <div id="content_2-1"></div>
+                <div id="content_2-2"></div>
+            </div>
+            
+        </main>
+        <footer></footer>
+    </div>
+
+</body>
+</html>
