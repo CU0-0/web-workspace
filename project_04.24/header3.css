@@ -1,5 +1,5 @@
 #header_3, ul, li{
-    border: 1px solid red;
+    border: 1px solid none;
     box-sizing: border-box;
 }
 #header_3{
@@ -45,7 +45,8 @@
 #navbar1>li>a:hover + ul{
     display: block;
     font-size: 15px;
-    
+    background: #f1dcdc;
+    border-radius: 20px;
 }
 #navbar1>li>ul:hover{
     display: block;
