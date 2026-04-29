@@ -205,6 +205,166 @@
         객체가 가지고 있는 속성 값을 반복문을 이용해서 화면상에 출력하시오.
     -->
 
+    <hr>
+
+    <h3>2번 방법은 언제 필요할까 ????</h3>
+
+    <button onclick="second();">버튼</button>
+
+    <script>
+        function second(){
+            const webtoon ={
+                "title" : "캐슬",
+                "webtoon name" : "캐슬"
+            };
+
+            console.log(webtoon["webtoon name"]);
+        }
+    </script>
+
+    <hr>
+
+    <h3>객체가 가지고 있는 속성에 반복문 사용하기</h3>
+
+    <button onclick="loop();">버튼</button>
+
+    <script>
+        function loop(){
+            const human = {
+                name : "홍길동",
+                age : 15,
+                address : "한양"
+            };
+
+            // for Loop, for of문 사용하기가 힘들다
+            for(let key in human){
+                //console.log(key);
+
+                console.log(human[key]);
+            }
+        }
+    </script>
+
+    <h3>객체의 속성(메소드)</h3>
+
+    <p>
+        객체의 속성 값 중 자료형이 함수자료형인 속성을 메소드라고 함
+    </p>
+
+    <button onclick="method();">메소드 버튼</button>
+
+    <script>
+        function method(){
+
+            const name = '지세웅';
+
+            const  cat = {
+                name : "야르",
+                kind : "고양이",
+                jump : function(){ // 속성명이 함수명이 되므로 익명함수로 구현
+                    alert(`${this.name}가 점프를 뜁니다`);
+
+                    // 속성명 또는 변수명을 사용하는데 this키워드를 붙이지 않으면
+                    // 외부에 존재하는 변수가 호출됨 !!!!
+                }
+            };
+            cat.jump();
+        }
+    </script>
+
+    <hr>
+
+    <h3>실습 ~~~</h3>
+
+    이름 : <input type="text" id="name"> <br>
+    국어점수 : <input type="text" id="kor"> <br>
+    영어점수 : <input type="text" id="eng"> <br>
+    <button onclick="info();">확인하기</button>
+    <div id="area9" class="area big"></div>
+
+    <script>
+        function info(){
+            // 객체 만들기 실습
+            // 객체명 : student
+            // 속성명 : 속성값
+            // name : 사용자가 입력한 이름 값 | kor : 사용자가 입력한 국어점수값
+            // eng : 사용자가 입력한 영어점수 값 | getSum : 점수의 합계를 반환하는 메소드
+            // getAvg : 점수의 평균을 반환하는 메소드
+            const studentName = document.querySelector('#name').value;
+            //console.log(studentName);
+            const korScore = document.querySelector('#kor').value;
+            //console.log(kor);
+            const engScore = document.querySelector('#eng').value;
+            //console.log(eng);
+            
+            const student = {
+                name : studentName,
+                kor : korScore,
+                eng : engScore,
+                getSum : function(){
+                    return Number(korScore) + Number(engScore);
+                },
+                getAvg : function(){
+                    return this.getSum() / 2;
+                },
+                toString : function(){
+                    return `학생명 : ${this.name} <br>
+                            국어점수 : ${this.kor} <br>
+                            영어점수 : ${this.eng} <br>
+                            합계 : ${this.getSum()} <br>
+                            평균 : ${this.getAvg()} <br>`;
+                }
+            };
+            console.log(student.getSum());
+            console.log(student.getAvg());
+
+            document.querySelector('#area9').innerHTML = student;
+            
+            console.log("name" in student);
+            console.log("name2" in student);
+
+            with(student){
+                console.log(kor);
+                console.log(eng);
+            }
+
+        }
+    </script>
+
+    <hr>
+
+    <h3>* 객체 속성 추가하기 !! 또는 속성 제거하기 !!</h3>
+
+    <button onclick="addProperty();">속성추가하기 !!</button>
+
+    <script>
+        function addProperty(){
+
+            const student = {};
+
+            student.name = '홍길동';
+            student.age = 15;
+
+            student.age = 125;
+
+            console.log(student);
+
+            delete student.age;
+
+            console.log(student);
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
 
 
 
