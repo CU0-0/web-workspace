@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>사실 제이쿼리하려고 밑밥 많이 깔았음 ...</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <h1>아직도 너무 많이 남아있는 jQuery란 무엇인가 ...?</h1>
+
+    <a href="http://jquery.com" target="_blank">궁금궁금</a>
+
+    <p>
+        기존 자바스크립트만으로는(옛날얘기) 브라우저마다 각기 다른 코드를 작성해서 <br>
+        브라우저를 조작해야하는 어려움이 있었다 !!!! <br>
+        창시자 "존 레식"은 이런 문제를 해결하기 위해 JavaScript라는 언어를 이용해서 <br>
+        함수모음집을 만들어서 배포했다 !!! <br>
+        이것 바로 jQuery라는 라이브러리인 것이다!
+        JavaScript로 함수 많이 모아놓은 파일 == 라이브러리<br>
+
+        - 사람들은 대체 왜 그렇게 jQuery에 열광했나요 ?? <br>
+        1) DOM요소와 관련된 스크립트 코드를 아 ~~ 주 쉽게 구현할 수 있음 <br>
+        2) AJAX(비동기식 통신), 이벤트 처리를 아 ~~~ 주 쉽게 구현할 수 있음 <br>
+        3) jQuery와 관련된 확장 플러그인, Open API등이 많이 지원된다. <br>
+
+        => 조금 쓰고 많이 할 수 있음!
+
+        단점 => 바닐라 자바스크립트 대비 속도가 너무 느림, 요즘 신규개발엔 사용되지 않음
+    </p>
+
+    <hr>
+
+    <h3> * jQuery라이브러리 연결 방법</h3>
+
+    <p>head영역에 script태그로 jQuery.js파일 가져오기 !!</p>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <script>
+        $(function (){
+            // const li = document.querySelectorAll('ul>li');
+            // console.log(li);
+
+            // for(let el of li){
+            //     el.style.backgroundColor = 'yellow';
+            // }
+
+            $('ul > li').css('background','yellow')
+                        .css('color', 'red')
+                        .css('font-size', '17px')
+                        .html('하하하 이게 제이쿼리다')
+                        .click(() => {
+                            alert('하하하하');
+                        });
+        });
+    </script>
+
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+
+
+
+
+
+
+
+
+
+
+    
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
